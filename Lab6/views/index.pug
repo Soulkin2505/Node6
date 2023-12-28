@@ -1,0 +1,88 @@
+extends layout
+
+block content
+  .container
+    
+    .jumbotron
+      h1.display-4 Bienvenidos a Mundo Videojuegos
+      p.lead Tu fuente de noticias, análisis y novedades sobre videojuegos.
+      a.btn.btn-primary(href="/habilidades", role="button") Explora Habilidades
+    h2 Juegos Populares
+    .row
+      .col-md-4
+        .card
+          img.card-img-top(src="/images/juego1.jpg", alt="The Legend of Zelda: Breath of the Wild")
+          .card-body
+            h5.card-title The Legend of Zelda: Breath of the Wild
+            p.card-text Explora el vasto mundo de Hyrule en esta aventura épica.
+            a.btn.btn-primary(href="https://www.zelda.com/breath-of-the-wild/", role="button") Más Info
+
+      .col-md-4
+        .card
+          img.card-img-top(src="/images/juego2.jpg", alt="God of War")
+          .card-body
+            h5.card-title God of War
+            p.card-text Únete a Kratos en una aventura mitológica a través de los reinos nórdicos.
+            a.btn.btn-primary(href="https://www.playstation.com/en-us/games/god-of-war/", role="button") Más Info
+
+      .col-md-4
+        .card
+          img.card-img-top(src="/images/juego3.jpg", alt="Cyberpunk 2077")
+          .card-body
+            h5.card-title Cyberpunk 2077
+            p.card-text Sumérgete en el mundo abierto de Night City, un lugar lleno de posibilidades.
+            a.btn.btn-primary(href="https://www.cyberpunk.net", role="button") Más Info
+
+      .col-md-4
+        .card
+          img.card-img-top(src="/images/juego4.jpg", alt="Halo Infinite")
+          .card-body
+            h5.card-title Halo Infinite
+            p.card-text La saga continua en el universo de Halo, con gráficos impresionantes y una historia envolvente.
+            a.btn.btn-primary(href="https://www.halowaypoint.com/", role="button") Más Info
+
+      .col-md-4
+        .card
+          img.card-img-top(src="/images/juego5.jpg", alt="Elden Ring")
+          .card-body
+            h5.card-title Elden Ring
+            p.card-text Explora el vasto mundo creado por Hidetaka Miyazaki y George R. R. Martin.
+            a.btn.btn-primary(href="https://www.eldenring.com/", role="button") Más Info
+
+      .col-md-4
+        .card
+          img.card-img-top(src="/images/juego6.jpg", alt="Final Fantasy VII Remake")
+          .card-body
+            h5.card-title Final Fantasy VII Remake
+            p.card-text Redescubre la historia clásica de Final Fantasy VII con un nuevo sistema de combate y gráficos mejorados.
+            a.btn.btn-primary(href="https://ffvii-remake.square-enix-games.com/", role="button") Más Info
+
+    // Sección de Noticias
+    h2 Últimas Noticias
+    .row
+      each val in [1, 2, 3]
+        .col-md-4
+          .card
+            .card-body
+              h5.card-title Noticia #{val}
+              p.card-text Extracto de la noticia.
+              a.btn.btn-secondary(href="#", role="button") Leer Más
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

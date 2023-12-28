@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.jumbotron {
+    background-color: #009688; /* Color modificado para mantener la coherencia */
+    color: white;
+    border-radius: 0; /* Añadido para mantener la coherencia */
+}
+
+.card {
+    background-color: #2c3e50;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.btn-primary, .btn-secondary {
+    background-color: #007bff; /* Color primario mantenido */
+    border-color: #007bff; /* Borde coherente con el color del botón */
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #004d40; /* Color de hover modificado para mejor contraste */
+    border-color: #00382e; /* Añadido para mantener coherencia en hover */
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.form-control {
+    border-radius: 0; /* Añadido para un aspecto más moderno */
+}
+
+.container {
+    padding-top: 20px; /* Espaciado para el contenido principal */
+}
+
+.footer {
+    background-color: #009688;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

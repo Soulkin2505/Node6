@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  .container
+    h2.mb-4 Contacto
+    p Si tienes consultas sobre videojuegos, colaboraciones o comentarios, no dudes en contactarnos.
+    .row
+      .col-md-8
+        form(method="post" action="/send")
+          .form-group
+            label(for="nombre") Nombre
+            input#nombre.form-control(type="text" name="nombre" required)
+          .form-group
+            label(for="email") Email
+            input#email.form-control(type="email" name="email" required)
+          .form-group
+            label(for="mensaje") Mensaje
+            textarea#mensaje.form-control(name="mensaje" rows="3" required)
+          button.btn.btn-primary(type="submit") Enviar Mensaje
+      .col-md-4
+        .card
+          .card-body
+            h4 Dirección
+            p  Calle EE.UU,  Arequipa, Peru
+            h4 Teléfono
+            p +51 987 048 707
+            h4 Email
+            p mundovideojuegos@gmail.com
